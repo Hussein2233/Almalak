@@ -56,7 +56,7 @@
     <script>
         function playQuran() {
             const surah = document.getElementById('surah').value.padStart(3, '0'); // إضافة أصفار لتنسيق السورة
-            const reciter = document.getElementById('reciter').value;
+            const  = document.getElementById('reciter').value;
             const audioPlayer = document.getElementById('quranPlayer');
 
             // استخدام مصدر موثوق لتشغيل القرآن
@@ -67,7 +67,7 @@
                 'Ajmy': 'https://server10.mp3quran.net/ajm/'
             };
 
-            const audioSrc = `${baseUrls[reciter]}${surah}.mp3`;
+            const audioSrc = `${baseUrls[reciter]}${}.mp3`;
 
             audioPlayer.src = audioSrc;
             audioPlayer.play();
